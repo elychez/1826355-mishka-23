@@ -210,22 +210,27 @@
 
 <section class="modal-cart">
   <div class="modal-cart__wrapper container">
-    <div class="modal-cart__header">
-      <h3 class="modal-cart__title">Добавить в корзину</h3>
-      <p class="modal-cart__text">Выберите размер:</p>
-      <ul class="modal-cart__list">
-        <li class="modal-cart__item modal-cart-item__current">
-          S
-        </li>
-        <li class="modal-cart__item">
-          M
-        </li>
-        <li class="modal-cart__item">
-          L
-        </li>
-      </ul>
-      <a class="button modal-cart__button" href="#">Добавить</a>
-    </div>
+    <form class="modal-cart__form" method="post">
+      <div class="modal-cart__header">
+        <h3 class="modal-cart__title">Добавить в корзину</h3>
+        <p class="modal-cart__text">Выберите размер:</p>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item modal-cart-item__current">
+            <input type="radio" id="item-size-s" name="size" value="size-s" checked>
+            <label for="item-size-s">S</label>
+          </li>
+          <li class="modal-cart__item">
+            <input type="radio" id="item-size-m" name="size" value="size-m">
+            <label for="item-size-m">M</label>
+          </li>
+          <li class="modal-cart__item">
+            <input type="radio" id="item-size-l" name="size" value="size-l">
+            <label for="item-size-l">L</label>
+          </li>
+        </ul>
+        <a class="button modal-cart__button" href="#">Добавить</a>
+      </div>
+    </form>
   </div>
 </section>
 
