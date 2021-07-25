@@ -28,13 +28,15 @@
       </li>
     </ul>
   </nav>
-  <div class="catalog-title">
-    <h1 class="catalog-title__title">Каталог товаров</h1>
-  </div>
+
 
 </header>
 
 <main class="page-main">
+
+  <div class="catalog-title">
+    <h1 class="catalog-title__title">Каталог товаров</h1>
+  </div>
 
   <section class="products">
     <div class="products__wrapper container">
@@ -124,13 +126,16 @@
       <p class="modal-cart__text">Выберите размер:</p>
       <ul class="modal-cart__list">
         <li class="modal-cart__item modal-cart-item__current">
-          S
+          <input type="radio" id="item-size-s" name="size" value="size-s" checked>
+          <label for="item-size-s">S</label>
         </li>
         <li class="modal-cart__item">
-          M
+          <input type="radio" id="item-size-m" name="size" value="size-m">
+          <label for="item-size-m">M</label>
         </li>
         <li class="modal-cart__item">
-          L
+          <input type="radio" id="item-size-l" name="size" value="size-l">
+          <label for="item-size-l">L</label>
         </li>
       </ul>
       <a class="button modal-cart__button" href="#">Добавить</a>
