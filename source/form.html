@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body class="page__body">
+<header class="page-header container">
+  <a class="page-header__logo">
+    <img src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#"><img src="img/search_icon.svg" width="18" height="18" alt="Иконка поиска">Поиск
+          по
+          сайту</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#"><img src="img/cart_icon.svg" width="21" height="18" alt="Иконка корзины">Корзина:
+          пока
+          пуста</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="catalog-title">
+    <h1 class="catalog-title__title">Вязание на заказ</h1>
+  </div>
+
+</header>
+
+<main class="page-main">
+
+  <section class="form">
+    <div class="form_wrapper container">
+      <div class="form__type type-sort">
+        <h3 class="form__title type__title">ТИП</h3>
+        <ul class="form__list type__list">
+          <li class="form__item type__item">
+            <input type="radio" id="interior-accessories" name="type" value="interior-accessories" checked>
+            <label for="interior-accessories">Аксессуар для интерьера</label>
+          </li>
+          <li>
+            <input type="radio" id="toys" name="type" value="toys-for-kids">
+            <label for="toys">Детская игрушка</label>
+          </li>
+        </ul>
+      </div>
+      <div class="form__type color-sort">
+        <h3 class="form__title color__title">Цвет</h3>
+        <ul class="form__list color__list">
+          <li class="form__item color__item">
+            <input type="checkbox" id="color" name="color" value="white-color" checked>
+            <label for="color">Белый</label>
+          </li>
+          <li class="form__item color__item">
+            <input type="checkbox" id="color" name="color" value="grey-color" checked>
+            <label for="color">Серый</label>
+          </li>
+          <li class="form__item color__item">
+            <input type="checkbox" id="color" name="color" value="tiffany-color">
+            <label for="color">«Тиффани»</label>
+          </li>
+          <li class="form__item color__item">
+            <input type="checkbox" id="color" name="color" value="black-color">
+            <label for="color">Черный</label>
+          </li>
+          <li class="form__item color__item">
+            <input type="checkbox" id="color" name="color" value="pink-color">
+            <label for="color">Розовый</label>
+          </li>
+          <li class="form__item color__item">
+            <input type="checkbox" id="color" name="color" value="orange-color">
+            <label for="color">Оранжевый</label>
+          </li>
+        </ul>
+      </div>
+      <div class="form_type name-surname">
+        <h3 class="form__title name-surname__title">ФИО</h3>
+        <ul class="form__list name-surname__list">
+          <li class="form__item name-surname__item">
+            <p class="name-surname__header">Имя:</p>
+            <label class="visually-hidden" for="name">Имя</label>
+            <input class="name-input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
+          </li>
+          <li class="form__item name-surname__item">
+            <p class="name-surname__header">Фамилия:</p>
+            <label class="visually-hidden" for="surname">Имя</label>
+            <input class="surname-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
+          </li>
+          <li class="form__item name-surname__item">
+            <p class="name-surname__header">Отчество:</p>
+            <label class="visually-hidden" for="fathers-name">Имя</label>
+            <input class="name-input" id="fathers-name" type="text" name="fathers-name"
+                   placeholder="Отчество, если желаете">
+          </li>
+        </ul>
+      </div>
+      <div class="form__type number">
+        <p class="number__header">тел</p>
+        <label class="visually-hidden" for="number">Телефон</label>
+        <input class="number-input" id="number" type="tel" name="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"><img
+        src="img/phone_icon.svg" width="25" height="24" alt="Иконка телефона">
+      </div>
+      <div class="form__type email">
+        <p class="number__header">E-mail</p>
+        <label class="visually-hidden" for="email">Эмайл</label>
+        <input class="email-input" id="email" type="email" name="email" placeholder="Ваш Email*"><img
+        src="img/mail_icon.svg" width="32" height="21" alt="Иконка эмайла">
+      </div>
+      <div class="form__type additional">
+        <p class="additional__header">Доп</p>
+        <label class="visually-hidden" for="additional">Пожелания к заказу</label>
+        <textarea class="additional-area" id="additional" name="additional"
+                  placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+      </div>
+      <small>*Поля обязательны для заполнения</small>
+      <a class="button form__button" href="#">ОТПРАВИТЬ ЗАКАЗ</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="social">
+    <div class="social__wrapper container">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="made-in">
+    <div class="made-in__wrapper container">
+      <h3 class="made-in__title">Разработано</h3>
+      <a href="#"><img src="img/htmlacademy_icon.svg" width="27" height="35" alt="htmlacademy logo"></a>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
