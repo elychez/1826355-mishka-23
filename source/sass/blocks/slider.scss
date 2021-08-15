@@ -1,0 +1,12 @@
+.slider {
+  margin: 0;
+
+  &__author {
+
+    &--name {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}

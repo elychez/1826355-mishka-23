@@ -1,0 +1,14 @@
+.page-header {
+  display: block;
+  position: relative;
+
+    &__logo {
+      flex-shrink: 0;
+
+        &--image {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  }
+}

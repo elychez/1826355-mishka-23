@@ -1,0 +1,40 @@
+.site-list {
+  list-style: none;
+  padding: 0;
+  display: block;
+
+  &__item {
+    position: relative;
+    margin: 27px 0;
+
+    &--link {
+      color: black;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &--search::before {
+      background-image: url("../../img/search_icon.svg");
+      background-repeat: no-repeat;
+      content: "";
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      position: absolute;
+      left: -15%;
+      top: 14%;
+    }
+
+    &--cart::before {
+      background-image: url("../../img/cart_icon.svg");
+      background-repeat: no-repeat;
+      content: "";
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      position: absolute;
+      left: -15%;
+      top: 14%;
+    }
+  }
+}

@@ -2,29 +2,33 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="page__body">
 <header class="page-header container">
   <a class="page-header__logo">
-    <img src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
+    <img class="page-header__logo--image" src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__item--link" href="catalog.html">Каталог товаров</a>
       </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+      <li class="site-list__item">
+        <a class="site-list__item--link" href="form.html">Вязание на заказ</a>
       </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#"><img src="img/search_icon.svg" width="18" height="18" alt="Иконка поиска">Поиск
+      <li class="site-list__item">
+        <a class="site-list__item--link site-list__item--search" href="#">Поиск
           по
           сайту</a>
       </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#"><img src="img/cart_icon.svg" width="21" height="18" alt="Иконка корзины">Корзина:
+      <li class="site-list__item">
+        <a class="site-list__item--link site-list__item--cart" href="#">Корзина:
           пока
           пуста</a>
       </li>
@@ -36,19 +40,19 @@
 <main class="page-main">
 
   <section class="categories">
+    <div class="categories__wrapper">
     <div class="main-title">
       <h1 class="main-title__title">Милые штуки ручной работы для дома</h1>
     </div>
-    <div class="categories__wrapper container">
-      <ul class="categories__list">
-        <li class="categories__item">
-          <a href="#">
+      <ul class="categories__list promo-list">
+        <li class="categories__item promo-list__item promo-list__interior-color">
+          <a class="categories__link promo-list__item--link" href="#">
             Предметы интерьера
             <img src="img/lamp_icon.svg" width="40" height="62" alt="Иконка интерьера">
           </a>
         </li>
-        <li class="categories__item">
-          <a href="#">
+        <li class="categories__item promo-list__item promo-list__toys-color">
+          <a class="categories__link promo-list__item--link" href="#">
             Детские игрушки
             <img src="img/lego_icon.svg" width="60" height="60" alt="Иконка игрушек">
           </a>
@@ -64,91 +68,93 @@
       <p class="sale-hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
         размерах.</p>
       <table class="sale-hit__table">
-        <tbody class="sale-hit__body">
-        <tr class="sale-hit__row">
-          <td class="sale-hit__data">Цвет:</td>
-          <td class="sale-hit__data">«Тиффани»/серый</td>
+        <tbody class="sale-hit__body sale-body">
+        <tr class="sale-body__row">
+          <td class="sale-body__row--data">Цвет:</td>
+          <td class="sale-body__row--data">«Тиффани»/серый</td>
         </tr>
-        <tr class="sale-hit__row">
-          <td class="sale-hit__data">Диаметр:</td>
-          <td class="sale-hit__data">25 см</td>
+        <tr class="sale-body__row">
+          <td class="sale-body__row--data">Диаметр:</td>
+          <td class="sale-body__row--data">25 см</td>
         </tr>
-        <tr class="sale-hit__row">
-          <td class="sale-hit__data">Высота:</td>
-          <td class="sale-hit__data">15 см</td>
+        <tr class="sale-body__row">
+          <td class="sale-body__row--data">Высота:</td>
+          <td class="sale-body__row--data">15 см</td>
         </tr>
         </tbody>
       </table>
-      <img src="img/knitted_basket.jpg" width="260" height="315" alt="Вязаные корзинки">
-      <h3 class="advantages__price"></h3>
-      <a class="button sale-hit__button" href="#">ЗАКАЗАТЬ</a>
+      <div class="sale-hit__content">
+      <img class="sale-hit__image" src="img/knitted_basket.jpg" width="260" height="315" alt="Вязаные корзинки">
+      <h3 class="advantages__price">Цена: 990 руб.</h3>
+      <a class="button button--offer" href="#">Заказать</a>
+      </div>
     </div>
   </section>
 
-  <section class="about">
-    <div class="about_wrapper container">
+  <section class="about container">
+    <div class="about_wrapper">
       <h2 class="about__title">Коротко о нас:</h2>
-      <ul class="about__list">
-        <li class="about__item">
-          <img src="img/flower_icon.svg" width="33" height="38" alt="Иконка цветка">
-          <p class="about__text">Экологически чистые материалы</p>
+      <ul class="about__list priorities-list">
+        <li class="about__item priorities-list__item">
+          <img class="priorities-list__item--image" src="img/flower_icon.svg" width="33" height="38" alt="Иконка цветка">
+          <p class="about__text priorities-list__item--text">Экологически чистые&nbsp;материалы</p>
         </li>
-        <li class="about__item">
-          <img src="img/money_icon.svg" width="47" height="27" alt="Иконка банкноты">
-          <p class="about__text">Скандинавский стиль по российской цене</p>
+        <li class="about__item priorities-list__item">
+          <img class="priorities-list__item--image" src="img/money_icon.svg" width="47" height="27" alt="Иконка банкноты">
+          <p class="about__text priorities-list__item--text">Скандинавский стиль по&nbsp;российской цене</p>
         </li>
-        <li class="about__item">
-          <img src="img/heart_icon.svg" width="34" height="27" alt="Иконка сердца">
-          <p class="about__text">Увеличивает лайки на фотографиях</p>
+        <li class="about__item priorities-list__item">
+          <img class="priorities-list__item--image" src="img/heart_icon.svg" width="34" height="27" alt="Иконка сердца">
+          <p class="about__text priorities-list__item--text">Увеличивает лайки на&nbsp;фотографиях</p>
         </li>
-        <li class="about__item">
-          <img src="img/threads_icon.svg" width="35" height="34" alt="Иконка клубка нитей">
-          <p class="about__text">Связано вручную с любовью и умилением</p>
+        <li class="about__item priorities-list__item">
+          <img class="priorities-list__item--image" src="img/threads_icon.svg" width="35" height="34" alt="Иконка клубка нитей">
+          <p class="about__text priorities-list__item--text">Связано вручную с любовью&nbsp;и умилением</p>
         </li>
-        <li class="about__item">
-          <img src="img/rocket_icon.svg" width="55" height="23" alt="Иконка ракеты">
-          <p class="about__text">Поддержка отечественного производителя</p>
+        <li class="about__item priorities-list__item">
+          <img class="priorities-list__item--image" src="img/rocket_icon.svg" width="55" height="23" alt="Иконка ракеты">
+          <p class="about__text priorities-list__item--text">Поддержка отечественного производителя</p>
         </li>
-        <li class="about__item">
-          <img src="img/prize_icon.svg" width="33" height="32" alt="Иконка подарка">
-          <p class="about__text">Поставляется в подарочной упаковке</p>
+        <li class="about__item priorities-list__item">
+          <img class="priorities-list__item--image" src="img/prize_icon.svg" width="33" height="32" alt="Иконка подарка">
+          <p class="about__text priorities-list__item--text">Поставляется в подарочной&nbsp;упаковке</p>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="reviews">
-    <div class="reviews__wrapper slider container">
+  <section class="reviews container">
+    <div class="reviews__wrapper">
       <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__list">
-          <div class="reviews__author-info">
+      <div class="reviews__list">
+        <blockquote class="reviews__item slider">
+          <div class="reviews__author-info slider__author">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite>Анастасия Красильникова @misssssiskras</cite>
+            <cite><span class="slider__author--name">Анастасия Красильникова</span> @misssssiskras</cite>
           </div>
         </blockquote>
-        <blockquote class="reviews__item slider__list">
-          <div class="reviews__author-info">
+        <blockquote class="reviews__item visually-hidden slider">
+          <div class="reviews__author-info slider__author">
             <p class="reviews__text">Я сестра молодой маы, но всё равно фотографии не набирали и близко такого
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
               мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite>Екатерина Красильникова @misssssiskras2</cite>
+            <cite><span class="slider__author--name">Екатерина Красильникова</span> @misssssiskras2</cite>
           </div>
         </blockquote>
-        <blockquote class="reviews__item slider__list">
-          <div class="reviews__author-info">
+        <blockquote class="reviews__item visually-hidden slider">
+          <div class="reviews__author-info slider__author">
             <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
               такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
               Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite>Елена Красильникова @misssssiskras3</cite>
+            <cite><span class="slider__author--name">Елена Красильникова</span> @misssssiskras3</cite>
           </div>
         </blockquote>
       </div>
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
       <button class="reviews__next" type="button">Следующий отзыв</button>
-      <a class="button order-submit__button" href="#">Написать</a>
+      <a class="button button--order" href="#">Написать</a>
     </div>
   </section>
 
@@ -156,42 +162,41 @@
     <div class="contacts__wrapper container">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table">
-        <tbody class="contacts__body">
-        <tr class="contacts__row">
-          <td class="contacts__data">e-mail:</td>
-          <td class="contacts__data">info@mimimishkashop.ru</td>
+        <tbody class="contacts__body contacts-body">
+        <tr class="contacts-body__row">
+          <td class="contacts-body__row--data">e-mail:</td>
+          <td class="contacts-body__row--data">info@mimimishkashop.ru</td>
         </tr>
-        <tr class="contacts__row">
-          <td class="contacts__data">адрес:</td>
-          <td class="contacts__data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
+        <tr class="contacts-body__row">
+          <td class="contacts-body__row--data">адрес:</td>
+          <td class="contacts-body__row--data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
         </tr>
         </tbody>
       </table>
-      <img src="img/map_mobile.png" width="320" height="455"
-           alt="г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
-      <a class="button contacts__button" href="#">НАПИШИТЕ НАМ</a>
+      <img src="img/map_mobile.png" width="320" height="455" alt="г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
+      <a class="button button--contacts" href="#">НАПИШИТЕ НАМ</a>
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="page-footer">
 
   <div class="social">
     <div class="social__wrapper container">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
+      <ul class="social__list social-icons">
+        <li class="social-icons__item">
+          <a class="social-icons__item--link" href="#">
             <img src="img/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social-icons__item">
+          <a class="social-icons__item--link" href="#">
             <img src="img/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social-icons__item">
+          <a class="social-icons__item--link" href="#">
             <img src="img/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
           </a>
         </li>
@@ -210,25 +215,25 @@
 
 <section class="modal-cart">
   <div class="modal-cart__wrapper container">
-    <form class="modal-cart__form" method="post">
+    <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-cart__header">
         <h3 class="modal-cart__title">Добавить в корзину</h3>
         <p class="modal-cart__text">Выберите размер:</p>
-        <ul class="modal-cart__list">
-          <li class="modal-cart__item modal-cart-item__current">
+        <ul class="modal-cart__list modal-sizes">
+          <li class="modal-cart__item modal-cart-item__current modal-sizes__item">
             <input type="radio" id="item-size-s" name="size" value="size-s" checked>
             <label for="item-size-s">S</label>
           </li>
-          <li class="modal-cart__item">
+          <li class="modal-cart__item modal-sizes__item">
             <input type="radio" id="item-size-m" name="size" value="size-m">
             <label for="item-size-m">M</label>
           </li>
-          <li class="modal-cart__item">
+          <li class="modal-cart__item modal-sizes__item">
             <input type="radio" id="item-size-l" name="size" value="size-l">
             <label for="item-size-l">L</label>
           </li>
         </ul>
-        <a class="button modal-cart__button" href="#">Добавить</a>
+        <a class="button button--modal-cart" href="#">Добавить</a>
       </div>
     </form>
   </div>

@@ -1,0 +1,19 @@
+.form {
+
+  &__text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    color: #63D1BB;
+  }
+}

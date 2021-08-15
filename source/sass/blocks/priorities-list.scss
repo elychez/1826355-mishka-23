@@ -1,0 +1,14 @@
+.priorities-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+
+    &--text {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+}

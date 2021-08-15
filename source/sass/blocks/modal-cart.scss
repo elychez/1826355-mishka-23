@@ -1,0 +1,22 @@
+.modal-cart {
+
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    width: 42%;
+    margin: 0;
+    padding: 0;
+    margin-left: 94px;
+    margin-top: 28px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    margin-left: 93px;
+  }
+}

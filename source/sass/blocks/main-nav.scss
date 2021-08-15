@@ -1,0 +1,11 @@
+.main-nav {
+  display: flex;
+  justify-content: center;
+
+  &__toggle {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+}

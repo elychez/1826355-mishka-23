@@ -1,0 +1,14 @@
+.contacts {
+
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__table {
+    border-collapse: collapse;
+    margin-bottom: 28px;
+    width: 100%;
+  }
+}

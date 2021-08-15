@@ -1,0 +1,11 @@
+.modal-sizes {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__item {
+    list-style: none;
+  }
+}
