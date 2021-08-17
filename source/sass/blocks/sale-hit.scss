@@ -1,36 +1,44 @@
 .sale-hit {
 
-  &__table {
+  .sale-hit__table {
     border-collapse: collapse;
     margin-bottom: 28px;
     width: 100%;
   }
 
-  &__title {
+  .sale-hit__title {
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
   }
 
-  &__of-the-week {
+  .sale-hit__of-the-week {
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
     color: #63D1BB;
   }
 
-  &__description {
+  .sale-hit__description {
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
+    color: #444444;
   }
 
-  &__image {
+  .sale-hit__image {
     margin-right: auto;
     margin-left: auto;
   }
 
-  &__content {
+  .sale-hit__content {
     text-align: center;
+  }
+
+  .sale-hit__price {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
   }
 }

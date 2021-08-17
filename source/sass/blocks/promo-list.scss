@@ -3,22 +3,22 @@
   margin: 0;
   padding: 0;
 
-  &__interior-color {
+  .promo-list__interior-color {
     background-color: #63d1bb;
   }
 
-  &__toys-color {
+  .promo-list__toys-color {
     background-color: #56c3b2;
   }
 
-  &__item {
+  .promo-list__item {
     width: 100%;
     min-height: 103px;
 
-    &--link {
+    .promo-list__item--link {
       font-weight: bold;
-      font-size: 17px;
-      line-height: 20px;
+      font-size: 19px;
+      line-height: 24px;
       color: white;
       padding-left: 30px;
       width: 130px;

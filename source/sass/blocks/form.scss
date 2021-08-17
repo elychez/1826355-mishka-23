@@ -1,16 +1,17 @@
 .form {
 
-  &__text {
+  .form__text {
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
+    color: #444444;
   }
 
-  &__list {
+  .form__list {
     list-style: none;
   }
 
-  &__title {
+  .form__title {
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;

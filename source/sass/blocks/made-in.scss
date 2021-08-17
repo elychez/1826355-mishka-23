@@ -1,12 +1,12 @@
 .made-in {
   margin-top: 65px;
 
-  &__wrapper {
+  .made-in__wrapper {
     display: flex;
     gap: 27px;
     justify-content: center;
 
-    &__title {
+    .made-in__title {
       font-weight: bold;
       font-size: 19px;
       line-height: 18px;

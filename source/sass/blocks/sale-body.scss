@@ -1,10 +1,11 @@
 .sale-body {
 
-  &__row {
+  .sale-body__row {
 
 
-    &--data {
+    .sale-body__row--data {
       border-bottom: 1px solid grey;
+      color: #444444;
     }
   }
 }

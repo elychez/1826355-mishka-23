@@ -1,6 +1,6 @@
 .modal-cart {
 
-  &__title {
+  .modal-cart__title {
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -9,9 +9,10 @@
     padding: 0;
     margin-left: 94px;
     margin-top: 28px;
+    text-transform: uppercase;
   }
 
-  &__text {
+  .modal-cart__text {
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;

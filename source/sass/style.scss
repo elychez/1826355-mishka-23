@@ -1,7 +1,6 @@
 @import "./blocks/about";
 @import "./blocks/additional";
 @import "./blocks/site-list";
-@import "./blocks/button";
 @import "./blocks/catalog-title";
 @import "./blocks/categories";
 @import "./blocks/color-sort";
@@ -33,8 +32,8 @@
 @import "./blocks/modal-sizes";
 @import "./blocks/offer-list";
 @import "./blocks/small-text";
-@import "visually-hidden";
-@import "container";
-@import "button";
+@import "./blocks/visually-hidden";
+@import "./blocks/container";
+@import "./blocks/button";
 @import "base";
 @import "fonts";

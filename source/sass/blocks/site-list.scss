@@ -3,17 +3,17 @@
   padding: 0;
   display: block;
 
-  &__item {
+  .site-list__item {
     position: relative;
     margin: 27px 0;
 
-    &--link {
+    .site-list__item--link {
       color: black;
       font-weight: bold;
       font-size: 17px;
       line-height: 24px;
     }
-    &--search::before {
+    .site-list__item--search::before {
       background-image: url("../../img/search_icon.svg");
       background-repeat: no-repeat;
       content: "";
@@ -25,7 +25,7 @@
       top: 14%;
     }
 
-    &--cart::before {
+    .site-list__item--cart::before {
       background-image: url("../../img/cart_icon.svg");
       background-repeat: no-repeat;
       content: "";

@@ -3,27 +3,28 @@
   padding: 0;
   margin: 0;
 
-  &__item {
+  .offer-list__item {
     border: 1px solid #ECECEC;
     text-align: center;
 
-    &--link {
+    .offer-list__item--link {
       color: #000000;
     }
 
-    &--title {
+    .offer-list__item--title {
       font-weight: bold;
       font-size: 17px;
       line-height: 24px;
     }
 
-    &--description {
+    .offer-list__item--description {
       font-weight: normal;
       font-size: 13px;
       line-height: 30px;
+      color: #444444;
     }
 
-    &--price {
+    .offer-list__item--price {
       font-weight: bold;
       font-size: 15px;
       line-height: 24px;
