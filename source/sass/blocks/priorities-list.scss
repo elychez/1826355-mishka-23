@@ -1,0 +1,17 @@
+.priorities-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+}
+
+.priorities-list__item--text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}

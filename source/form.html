@@ -2,29 +2,33 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="page__body">
 <header class="page-header container">
-  <a class="page-header__logo">
-    <img src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
+  <a class="page-header__logo" href="index.html">
+    <img class="page-header__logo--image" src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__item--link" href="catalog.html">Каталог товаров</a>
       </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+      <li class="site-list__item">
+        <a class="site-list__item--link" href="form.html">Вязание на заказ</a>
       </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#"><img src="img/search_icon.svg" width="18" height="18" alt="Иконка поиска">Поиск
+      <li class="site-list__item">
+        <a class="site-list__item--link site-list__item--search" href="#">Поиск
           по
           сайту</a>
       </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#"><img src="img/cart_icon.svg" width="21" height="18" alt="Иконка корзины">Корзина:
+      <li class="site-list__item">
+        <a class="site-list__item--link site-list__item--cart" href="#">Корзина:
           пока
           пуста</a>
       </li>
@@ -35,20 +39,20 @@
 
 <main class="page-main">
 
-  <div class="catalog-title">
-    <h1 class="catalog-title__title">Вязание на заказ</h1>
+  <div class="form-title">
+    <h1 class="form-title__title">Вязание на заказ</h1>
   </div>
 
   <section class="form">
     <div class="form__wrapper container">
-      <form class="form__form" method="post">
-      <div class="form__type type-sort">
+      <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__type">
         <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <h3 class="form__title form__name-title">ТИП</h3>
-        <ul class="form__list type-sort__list">
+        <ul class="form__list type-sort">
           <li class="form__item type-sort__item">
             <input type="radio" id="interior-accessories" name="type" value="interior-accessories" checked>
-            <label for="interior-accessories">Аксессуар для интерьера</label>
+            <label class="type-sort__label" for="interior-accessories">Аксессуар для интерьера</label>
           </li>
           <li class="form__item type-sort__item">
             <input type="radio" id="toys" name="type" value="toys-for-kids">
@@ -56,99 +60,98 @@
           </li>
         </ul>
       </div>
-      <div class="form__type color-sort">
+      <div class="form__type">
         <h3 class="form__title form__name-title">Цвет</h3>
-        <ul class="form__list color-sort__list">
+        <ul class="form__list color-sort">
           <li class="form__item color-sort__item">
             <input type="checkbox" id="white" name="color" value="white-color" checked>
-            <label for="white">Белый</label>
+            <label class="color-sort__label" for="white">Белый</label>
           </li>
           <li class="form__item color-sort__item">
             <input type="checkbox" id="grey" name="color" value="grey-color" checked>
-            <label for="grey">Серый</label>
+            <label class="color-sort__label" for="grey">Серый</label>
           </li>
           <li class="form__item color-sort__item">
             <input type="checkbox" id="tiffany" name="color" value="tiffany-color">
-            <label for="tiffany">«Тиффани»</label>
+            <label class="color-sort__label" for="tiffany">«Тиффани»</label>
           </li>
           <li class="form__item color-sort__item">
             <input type="checkbox" id="black" name="color" value="black-color">
-            <label for="black">Черный</label>
+            <label class="color-sort__label" for="black">Черный</label>
           </li>
           <li class="form__item color-sort__item">
             <input type="checkbox" id="pink" name="color" value="pink-color">
-            <label for="pink">Розовый</label>
+            <label class="color-sort__label" for="pink">Розовый</label>
           </li>
           <li class="form__item color-sort__item">
             <input type="checkbox" id="orange" name="color" value="orange-color">
-            <label for="orange">Оранжевый</label>
+            <label class="color-sort__label" for="orange">Оранжевый</label>
           </li>
         </ul>
       </div>
-      <div class="form_type name-surname">
+      <div class="form_type">
         <h3 class="form__title form__name-title">ФИО</h3>
-        <ul class="form__list name-surname__list">
+        <ul class="form__list name-surname">
           <li class="form__item name-surname__item">
             <p class="name-surname__header">Имя:</p>
             <label class="visually-hidden" for="name">Имя</label>
-            <input class="name-input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
+            <input class="name-input name-surname__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
           </li>
           <li class="form__item name-surname__item">
             <p class="name-surname__header">Фамилия:</p>
             <label class="visually-hidden" for="surname">Имя</label>
-            <input class="surname-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
+            <input class="surname-input name-surname__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
           </li>
           <li class="form__item name-surname__item">
             <p class="name-surname__header">Отчество:</p>
             <label class="visually-hidden" for="fathers-name">Имя</label>
-            <input class="name-input" id="fathers-name" type="text" name="fathers-name"
-                   placeholder="Отчество, если желаете">
+            <input class="name-input name-surname__input" id="fathers-name" type="text" name="fathers-name" placeholder="Отчество, если желаете">
           </li>
         </ul>
       </div>
       <div class="form__type number">
         <p class="number__header">тел</p>
         <label class="visually-hidden" for="number">Телефон</label>
-        <input class="number-input" id="number" type="tel" name="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"><img
+        <input class="number__input" id="number" type="tel" name="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"><img
         src="img/phone_icon.svg" width="25" height="24" alt="Иконка телефона">
       </div>
       <div class="form__type email">
         <p class="number__header">E-mail</p>
         <label class="visually-hidden" for="email">Эмайл</label>
-        <input class="email-input" id="email" type="email" name="email" placeholder="Ваш Email*"><img
+        <input class="number__input" id="email" type="email" name="email" placeholder="Ваш Email*"><img
         src="img/mail_icon.svg" width="32" height="21" alt="Иконка эмайла">
       </div>
       <div class="form__type additional">
-        <p class="additional__header">Доп</p>
+        <p class="additional__header number__header">Доп</p>
         <label class="visually-hidden" for="additional">Пожелания к заказу</label>
-        <textarea class="additional-area" id="additional" name="additional"
+        <textarea class="additional-area number__input" id="additional" name="additional"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
-      <small>*Поля обязательны для заполнения</small>
-      <button class="button form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+      <small class="small-text">*Поля обязательны для заполнения</small>
+      <button class="button button--form" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
       </form>
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="page-footer">
 
   <div class="social">
     <div class="social__wrapper container">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
+      <ul class="social__list social-icons">
+        <li class="social-icons__item">
+          <a class="social-icons__item--link" href="#">
             <img src="img/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social-icons__item">
+          <a class="social-icons__item--link" href="#">
             <img src="img/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social-icons__item">
+          <a class="social-icons__item--link" href="#">
             <img src="img/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
           </a>
         </li>

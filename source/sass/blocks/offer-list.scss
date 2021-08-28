@@ -1,0 +1,33 @@
+.offer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offer-list__item {
+  border: 1px solid #ECECEC;
+  text-align: center;
+}
+
+.offer-list__item--link {
+  color: #000000;
+}
+
+.offer-list__item--title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.offer-list__item--description {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.offer-list__item--price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}
