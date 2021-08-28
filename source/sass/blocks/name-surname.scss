@@ -1,15 +1,12 @@
-.name-surname {
+.name-surname__header{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
 
-  .name-surname__header{
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-  }
-
-  .name-surname__input {
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 18px;
-    color: #000000;
-  }
+.name-surname__input {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
 }

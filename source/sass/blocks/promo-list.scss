@@ -2,27 +2,27 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  .promo-list__interior-color {
-    background-color: #63d1bb;
-  }
+.promo-list__interior-color {
+  background-color: #63d1bb;
+}
 
-  .promo-list__toys-color {
-    background-color: #56c3b2;
-  }
+.promo-list__toys-color {
+  background-color: #56c3b2;
+}
 
-  .promo-list__item {
-    width: 100%;
-    min-height: 103px;
+.promo-list__item {
+  width: 100%;
+  min-height: 103px;
+}
 
-    .promo-list__item--link {
-      font-weight: bold;
-      font-size: 19px;
-      line-height: 24px;
-      color: white;
-      padding-left: 30px;
-      width: 130px;
-      display: block;
-    }
-  }
+.promo-list__item--link {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
+  padding-left: 30px;
+  width: 130px;
+  display: block;
 }

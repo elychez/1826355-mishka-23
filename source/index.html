@@ -10,18 +10,20 @@
 </head>
 <body class="page__body">
 <header class="page-header container">
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <img class="page-header__logo--image" src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list site-list">
+    <ul class="main-nav__list site-list site-list--nav">
       <li class="site-list__item">
         <a class="site-list__item--link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__item--link" href="form.html">Вязание на заказ</a>
       </li>
+    </ul>
+    <ul class="main-nav__list site-list site-list--user-nav">
       <li class="site-list__item">
         <a class="site-list__item--link site-list__item--search" href="#">Поиск
           по
@@ -67,6 +69,7 @@
       <h3 class="sale-hit__of-the-week">ТОВАР НЕДЕЛИ</h3>
       <p class="sale-hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
         размерах.</p>
+      <div class="sale-hit__aa">
       <table class="sale-hit__table">
         <tbody class="sale-hit__body sale-body">
         <tr class="sale-body__row">
@@ -87,6 +90,7 @@
       <img class="sale-hit__image" src="img/knitted_basket.jpg" width="260" height="315" alt="Вязаные корзинки">
       <h3 class="sale-hit__price">Цена: 990 руб.</h3>
       <a class="button button--offer" href="#">Заказать</a>
+      </div>
       </div>
     </div>
   </section>
@@ -238,6 +242,21 @@
     </form>
   </div>
 </section>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
 
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </body>
 </html>

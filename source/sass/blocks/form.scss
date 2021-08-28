@@ -1,20 +1,17 @@
-.form {
+.form__text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
 
-  .form__text {
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 24px;
-    color: #444444;
-  }
+.form__list {
+  list-style: none;
+}
 
-  .form__list {
-    list-style: none;
-  }
-
-  .form__title {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    color: #63D1BB;
-  }
+.form__title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63D1BB;
 }

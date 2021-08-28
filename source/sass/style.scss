@@ -1,3 +1,6 @@
+@import "base";
+@import "fonts";
+@import "viewports";
 @import "./blocks/about";
 @import "./blocks/additional";
 @import "./blocks/site-list";
@@ -35,5 +38,4 @@
 @import "./blocks/visually-hidden";
 @import "./blocks/container";
 @import "./blocks/button";
-@import "base";
-@import "fonts";
+

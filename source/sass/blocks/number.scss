@@ -1,15 +1,12 @@
-.number {
+.number__header{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
 
-  .number__header{
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-  }
-
-  .number__input {
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 18px;
-    color: #000000;
-  }
+.number__input {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
 }
