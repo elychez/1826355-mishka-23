@@ -1,10 +1,17 @@
 .catalog-title {
-  margin: 73px 8px 120px 8px;
+  margin: 20px 0 22px 0;
   text-align: center;
+  background: #F1F1F1;
+  height: 177px;
+
+  @media (min-width: $tablet-width) {
+    background: #F1F1F1;
+  }
 }
 
 .catalog-title__title {
   font-size: 27px;
   line-height: 30px;
   margin: 0;
+  padding-top: 18%;
 }

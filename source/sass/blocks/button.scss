@@ -12,17 +12,34 @@
 
 .button--offer {
   text-align: center;
-  padding: 16px 0;
+  padding: 16px 86px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 
 .button--order {
   text-align: center;
   padding: 16px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 26px;
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    right: 58px;
+  }
 }
 
 .button--contacts {
   text-align: center;
   padding: 16px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 28px;
+    display: inline-block;
+  }
 }
 
 .button--modal-cart {
@@ -32,11 +49,18 @@
 
 .button--video-process {
   text-align: center;
-  padding: 16px 0;
+  padding: 18px 11px;
   line-height: 16px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .button--form {
   text-align: center;
-  padding: 16px 0;
+  padding: 18px 37px;
+  background-color: white;
+  width: 260px;
 }

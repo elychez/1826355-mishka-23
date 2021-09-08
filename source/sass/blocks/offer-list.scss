@@ -2,21 +2,39 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 668px;
+  }
 }
 
 .offer-list__item {
   border: 1px solid #ECECEC;
   text-align: center;
+  margin-top: 10px;
+  position: relative;
 }
 
 .offer-list__item--link {
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .offer-list__item--title {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  width: 260px;
 }
 
 .offer-list__item--description {
@@ -30,4 +48,25 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+
+  &::after {
+    background-image: url("../img/cart_icon.svg");
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    content: "";
+    top: 89%;
+    left: 86%;
+  }
+}
+
+.offer__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 33px;
+  }
 }
