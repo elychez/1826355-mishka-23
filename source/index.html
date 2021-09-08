@@ -9,11 +9,15 @@
 
 </head>
 <body class="page__body">
-<header class="page-header container">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo--image" src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
-  </a>
-  <nav class="main-nav">
+<header class="page-header">
+  <nav class="main-nav main-nav--closed">
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/desktop_logo.svg">
+        <source media="(min-width: 768px)" srcset="img/tablet_logo.svg">
+        <img class="page-header__logo--image" src="img/mobile_logo.svg" width="86" height="35" alt="Магазин Мишка">
+      </picture>
+    </a>
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="main-nav__list site-list site-list--nav">
       <li class="site-list__item">
@@ -25,9 +29,7 @@
     </ul>
     <ul class="main-nav__list site-list site-list--user-nav">
       <li class="site-list__item">
-        <a class="site-list__item--link site-list__item--search" href="#">Поиск
-          по
-          сайту</a>
+        <a class="site-list__item--link site-list__item--search" href="#">Поиск по сайту</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__item--link site-list__item--cart" href="#">Корзина:
@@ -35,6 +37,15 @@
           пуста</a>
       </li>
     </ul>
+    <ul class="site-list__offer">
+      <li class="site-list__offer--item">
+        <a href="#">Новые поступления</a>
+      </li>
+      <li class="site-list__offer--item">
+        <a href="#">Распродажа</a>
+      </li>
+    </ul>
+    <p class="main-nav__text">Бесплатная доставка по России</p>
   </nav>
 
 </header>
@@ -43,9 +54,9 @@
 
   <section class="categories">
     <div class="categories__wrapper">
-    <div class="main-title">
-      <h1 class="main-title__title">Милые штуки ручной работы для дома</h1>
-    </div>
+      <div class="main-title">
+        <h1 class="main-title__title">Милые штуки ручной работы для дома</h1>
+      </div>
       <ul class="categories__list promo-list">
         <li class="categories__item promo-list__item promo-list__interior-color">
           <a class="categories__link promo-list__item--link" href="#">
@@ -65,11 +76,12 @@
 
   <section class="sale-hit">
     <div class="sale-hit__wrapper container">
-      <h2 class="sale-hit__title">Вязаные корзинки</h2>
-      <h3 class="sale-hit__of-the-week">ТОВАР НЕДЕЛИ</h3>
+      <div class="sale-hit__titles">
+        <h2 class="sale-hit__title">Вязаные корзинки</h2>
+        <h3 class="sale-hit__of-the-week">ТОВАР НЕДЕЛИ</h3>
+      </div>
       <p class="sale-hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
         размерах.</p>
-      <div class="sale-hit__aa">
       <table class="sale-hit__table">
         <tbody class="sale-hit__body sale-body">
         <tr class="sale-body__row">
@@ -87,11 +99,22 @@
         </tbody>
       </table>
       <div class="sale-hit__content">
-      <img class="sale-hit__image" src="img/knitted_basket.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/knitted_basket_desktop@1x.webp 1x, img/knitted_basket_desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/knitted_basket_tablet@1x.webp 1x, img/knitted_basket_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/knitted_basket.webp 1x, img/knitted_basket@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+                  srcset="img/knitted_basket_desktop@1x.jpg 1x, img/knitted_basket_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="img/knitted_basket_tablet@1x.jpg 1x, img/knitted_basket_tablet@2x.jpg 2x">
+          <img class="sale-hit__image" src="img/knitted_basket.jpg" srcset="img/knitted_basket@2x.jpg 2x" width="260"
+               height="315" alt="Вязаные корзинки">
+        </picture>
+      </div>
       <h3 class="sale-hit__price">Цена: 990 руб.</h3>
       <a class="button button--offer" href="#">Заказать</a>
-      </div>
-      </div>
     </div>
   </section>
 
@@ -100,11 +123,13 @@
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list priorities-list">
         <li class="about__item priorities-list__item">
-          <img class="priorities-list__item--image" src="img/flower_icon.svg" width="33" height="38" alt="Иконка цветка">
+          <img class="priorities-list__item--image" src="img/flower_icon.svg" width="33" height="38"
+               alt="Иконка цветка">
           <p class="about__text priorities-list__item--text">Экологически чистые&nbsp;материалы</p>
         </li>
         <li class="about__item priorities-list__item">
-          <img class="priorities-list__item--image" src="img/money_icon.svg" width="47" height="27" alt="Иконка банкноты">
+          <img class="priorities-list__item--image" src="img/money_icon.svg" width="47" height="27"
+               alt="Иконка банкноты">
           <p class="about__text priorities-list__item--text">Скандинавский стиль по&nbsp;российской цене</p>
         </li>
         <li class="about__item priorities-list__item">
@@ -112,15 +137,18 @@
           <p class="about__text priorities-list__item--text">Увеличивает лайки на&nbsp;фотографиях</p>
         </li>
         <li class="about__item priorities-list__item">
-          <img class="priorities-list__item--image" src="img/threads_icon.svg" width="35" height="34" alt="Иконка клубка нитей">
+          <img class="priorities-list__item--image" src="img/threads_icon.svg" width="35" height="34"
+               alt="Иконка клубка нитей">
           <p class="about__text priorities-list__item--text">Связано вручную с любовью&nbsp;и умилением</p>
         </li>
         <li class="about__item priorities-list__item">
-          <img class="priorities-list__item--image" src="img/rocket_icon.svg" width="55" height="23" alt="Иконка ракеты">
+          <img class="priorities-list__item--image" src="img/rocket_icon.svg" width="55" height="23"
+               alt="Иконка ракеты">
           <p class="about__text priorities-list__item--text">Поддержка отечественного производителя</p>
         </li>
         <li class="about__item priorities-list__item">
-          <img class="priorities-list__item--image" src="img/prize_icon.svg" width="33" height="32" alt="Иконка подарка">
+          <img class="priorities-list__item--image" src="img/prize_icon.svg" width="33" height="32"
+               alt="Иконка подарка">
           <p class="about__text priorities-list__item--text">Поставляется в подарочной&nbsp;упаковке</p>
         </li>
       </ul>
@@ -165,19 +193,20 @@
   <section class="contacts">
     <div class="contacts__wrapper container">
       <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__table">
-        <tbody class="contacts__body contacts-body">
-        <tr class="contacts-body__row">
-          <td class="contacts-body__row--data">e-mail:</td>
-          <td class="contacts-body__row--data">info@mimimishkashop.ru</td>
-        </tr>
-        <tr class="contacts-body__row">
-          <td class="contacts-body__row--data">адрес:</td>
-          <td class="contacts-body__row--data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
-        </tr>
-        </tbody>
-      </table>
-      <img src="img/map_mobile.png" width="320" height="455" alt="г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
+      <div class="contacts__contacts">
+        <div class="contacts__email">
+          <span class="contacts__email--email">e-mail:</span>
+          <span class="contacts__email--content">info@mimimishkashop.ru</span>
+        </div>
+        <div class="contacts__address">
+          <span class="contacts__address--address">адрес:</span>
+          <span class="contacts__address--content">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
+        </div>
+      </div>
+      <picture>
+        <img src="img/map_mobile.png" width="320" height="455"
+             alt="г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
+      </picture>
       <a class="button button--contacts" href="#">НАПИШИТЕ НАМ</a>
     </div>
   </section>
@@ -186,69 +215,67 @@
 
 <footer class="page-footer">
 
-  <div class="social">
-    <div class="social__wrapper container">
-      <ul class="social__list social-icons">
-        <li class="social-icons__item">
-          <a class="social-icons__item--link" href="#">
-            <img src="img/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a class="social-icons__item--link" href="#">
-            <img src="img/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a class="social-icons__item--link" href="#">
-            <img src="img/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <div class="container page-footer__wrapper">
+    <a href="index.html" class="page-footer__logo">
+      <img src="img/footer-logo-tablet.svg" width="101" height="34" alt="Mishka logo">
+    </a>
 
-  <div class="made-in">
-    <div class="made-in__wrapper container">
-      <h3 class="made-in__title">Разработано</h3>
-      <a href="#"><img src="img/htmlacademy_icon.svg" width="27" height="35" alt="htmlacademy logo"></a>
+
+    <ul class="social__list social-icons">
+      <li class="social-icons__item">
+        <a class="social-icons__item--link" href="#">
+          <img src="img/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
+        </a>
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__item--link" href="#">
+          <img src="img/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
+        </a>
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__item--link" href="#">
+          <img src="img/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
+        </a>
+      </li>
+    </ul>
+
+    <div class="made-in">
+      <div class="made-in__wrapper">
+        <h3 class="made-in__title">Разработано</h3>
+        <a href="#"><img src="img/htmlacademy_icon.svg" width="27" height="35" alt="htmlacademy logo"></a>
+      </div>
     </div>
   </div>
 
 </footer>
 
+<div class="modal">
 <section class="modal-cart">
   <div class="modal-cart__wrapper container">
     <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="modal-cart__header">
-        <h3 class="modal-cart__title">Добавить в корзину</h3>
-        <p class="modal-cart__text">Выберите размер:</p>
-        <ul class="modal-cart__list modal-sizes">
-          <li class="modal-cart__item modal-cart-item__current modal-sizes__item">
-            <input type="radio" id="item-size-s" name="size" value="size-s" checked>
-            <label for="item-size-s">S</label>
-          </li>
-          <li class="modal-cart__item modal-sizes__item">
-            <input type="radio" id="item-size-m" name="size" value="size-m">
-            <label for="item-size-m">M</label>
-          </li>
-          <li class="modal-cart__item modal-sizes__item">
-            <input type="radio" id="item-size-l" name="size" value="size-l">
-            <label for="item-size-l">L</label>
-          </li>
-        </ul>
-        <a class="button button--modal-cart" href="#">Добавить</a>
+      <h3 class="modal-cart__title">Добавить в корзину</h3>
+      <p class="modal-cart__text">Выберите размер:</p>
+      <div class="modal-cart__input-wrapper">
+        <input class="modal-cart__input" type="radio" id="item-size-s" name="size" value="size-s" checked>
+        <label class="modal-cart__label" for="item-size-s">S</label>
+        <input class="modal-cart__input" type="radio" id="item-size-m" name="size" value="size-m">
+        <label class="modal-cart__label" for="item-size-m">M</label>
+        <input class="modal-cart__input" type="radio" id="item-size-l" name="size" value="size-l">
+        <label class="modal-cart__label" for="item-size-l">L</label>
       </div>
+      <a class="button button--modal-cart" href="#">Добавить</a>
     </form>
   </div>
 </section>
+</div>
+
 <script>
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
 
   navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
+  navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');

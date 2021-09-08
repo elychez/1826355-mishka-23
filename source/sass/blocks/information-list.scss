@@ -1,0 +1,38 @@
+.information-list {
+  padding-left: 0;
+  margin-bottom: 36px;
+}
+
+.information-list__item {
+  padding-bottom: 19px;
+}
+
+.information-list__label {
+  font-size: 17px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.information-list__input {
+  padding-bottom: 0;
+  width: 100%;
+  min-height: 43px;
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 17px;
+  line-height: 18px;
+  outline: 0;
+  transition: border-color 0.5s ease-out;
+}
+
+.information-list__input:hover,
+.information-list__input:focus {
+  border-color: #62d1ba;
+  transition: border-color 0.5s ease;
+}
+
+.information-list__input:focus::placeholder {
+  color: #444444;
+  transition: color 0.5s ease;
+}

@@ -1,5 +1,11 @@
 .video-process {
   text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .video-process__title {
@@ -7,10 +13,65 @@
   font-size: 17px;
   line-height: 24px;
   width: 50%;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  &::before {
+    background-image: url("../img/camera_icon.svg");
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    content: "";
+    top: 6%;
+    left: 14%;
+
+    @media (min-width: $tablet-width) {
+      top: 70%;
+      left: 14%;
+    }
+  }
 }
 
 .video-process__description {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.video-process__wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ECECEC;
+  width: 262px;
+  margin-top: 10px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 554px;
+    height: 604px;
+  }
+}
+
+
+.video-process__img {
+  width: 260px;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 400px;
+    order: 1;
+  }
 }

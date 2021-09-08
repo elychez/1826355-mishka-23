@@ -2,12 +2,30 @@
   border-collapse: collapse;
   margin-bottom: 28px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    height: 100px;
+    margin-top: 85px;
+  }
 }
 
 .sale-hit__title {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 5;
+    order: 2;
+  }
 }
 
 .sale-hit__of-the-week {
@@ -15,6 +33,18 @@
   font-size: 17px;
   line-height: 20px;
   color: #63D1BB;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+    width: 100px;
+    text-align: center;
+    padding-top: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    padding-top: 41px;
+  }
 }
 
 .sale-hit__description {
@@ -22,15 +52,37 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 292px;
+  }
 }
 
 .sale-hit__image {
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 447px;
+    height: 601px;
+  }
 }
 
 .sale-hit__content {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 22%;
+    left: 58%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 5%;
+    left: 40%;
+  }
 }
 
 .sale-hit__price {
@@ -38,11 +90,36 @@
   font-size: 17px;
   line-height: 24px;
   color: #444444;
-}
+  text-align: center;
 
-.sale-hit__aa {
-  @media screen and (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 88px;
+  }
+}
+.sale-hit__titles{
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-left: -149px;
+    gap: 43px;
+  }
+}
+
+.sale-hit__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 255px;
   }
 }

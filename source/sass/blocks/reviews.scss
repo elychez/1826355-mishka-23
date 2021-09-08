@@ -1,9 +1,39 @@
 .reviews {
   width: 320px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .reviews__title {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 255px;
+  }
 }
