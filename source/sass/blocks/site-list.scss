@@ -57,7 +57,7 @@
     font-size: 0;
   }
   &::before {
-    background-image: url("../../img/search_icon.svg");
+    background-image: url("../../img/icons/search_icon.svg");
     background-repeat: no-repeat;
     content: "";
     width: 18px;
@@ -75,7 +75,7 @@
 }
 
 .site-list__item--cart::before {
-  background-image: url("../../img/cart_icon.svg");
+  background-image: url("../../img/icons/cart_icon.svg");
   background-repeat: no-repeat;
   content: "";
   width: 18px;

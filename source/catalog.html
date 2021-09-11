@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
 </head>
 <body class="page__body">
@@ -164,17 +168,17 @@
       <ul class="social__list social-icons">
         <li class="social-icons__item">
           <a class="social-icons__item--link" href="#">
-            <img src="img/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
+            <img src="img/icons/instagram_icon.svg" width="22" height="21" alt="Иконка instagram">
           </a>
         </li>
         <li class="social-icons__item">
           <a class="social-icons__item--link" href="#">
-            <img src="img/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
+            <img src="img/icons/facebook_icon.svg" width="15" height="28" alt="Иконка facebook">
           </a>
         </li>
         <li class="social-icons__item">
           <a class="social-icons__item--link" href="#">
-            <img src="img/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
+            <img src="img/icons/twitter_icon.svg" width="23" height="20" alt="Иконка twitter">
           </a>
         </li>
       </ul>
@@ -215,21 +219,6 @@
     </form>
   </div>
 </section>
-<script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-
-  navMain.classList.remove('main-nav--nojs');
-
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

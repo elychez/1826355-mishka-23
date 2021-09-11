@@ -1,12 +1,32 @@
-.made-in__wrapper {
+.made-in {
   display: flex;
-  gap: 27px;
-  justify-content: center;
   align-items: center;
 }
 
 .made-in__title {
-  font-weight: bold;
+  margin-right: 26px;
+  font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+}
+
+.made-in__htmlacademy-logo {
+  fill: #63D1BB;;
+}
+
+.made-in__link {
+  width: 28px;
+  height: 35px;
+
+  &:hover {
+    .copyright__htmlacademy-logo {
+      fill: #46C1AE;
+    }
+  }
+
+  &:focus {
+    .copyright__htmlacademy-logo {
+      opacity: 0.3;
+    }
+  }
 }

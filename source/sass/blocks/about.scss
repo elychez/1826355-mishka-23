@@ -1,5 +1,6 @@
 .about {
   width: 333px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -23,6 +24,21 @@
 }
 
 .about_wrapper {
+  margin-top: 70px;
+
+  &::before {
+    background-image: url(../../img/grey_zigzag.svg);
+    width: 320px;
+    height: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 0;
+    color: #F1F1F1;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 255px;
   }
