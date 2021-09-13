@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     width: 292px;
     height: 100px;
-    margin-top: 85px;
+    margin-top: 48px;
   }
 }
 
@@ -64,12 +64,18 @@
     font-size: 17px;
     line-height: 30px;
     width: 292px;
+    margin-top: 31px;
   }
 }
 
 .sale-hit__image {
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 447px;
@@ -104,7 +110,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-left: 80px;
+    margin-top: 71px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 72px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {

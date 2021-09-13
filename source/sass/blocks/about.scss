@@ -39,6 +39,10 @@
     color: #F1F1F1;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-top: 121px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 255px;
   }

@@ -16,6 +16,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    padding: 16px 98px;
   }
 }
 
@@ -27,8 +28,9 @@
     padding: 16px 26px;
     display: inline-block;
     position: absolute;
-    top: 1px;
-    right: 58px;
+    top: 76px;
+    right: 49px;
+    width: 176px;
   }
 }
 
@@ -37,7 +39,7 @@
   padding: 16px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 28px;
+    padding: 16px 34px;
     display: inline-block;
   }
 }
@@ -63,4 +65,5 @@
   padding: 18px 37px;
   background-color: white;
   width: 260px;
+  margin-top: 20px;
 }

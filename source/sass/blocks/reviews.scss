@@ -1,9 +1,11 @@
 .reviews {
   width: 320px;
   color: #444444;
+  margin-top: 43px;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin-top: 22px;
   }
 }
 
@@ -29,7 +31,7 @@
 }
 
 .reviews__list {
-  margin-bottom: 65px;
+  margin-bottom: 32px;
 }
 
 .reviews__text {
@@ -91,7 +93,7 @@
     position: absolute;
     column-gap: 37px;
     right: 69px;
-    bottom: 147px;
+    bottom: 179px;
     margin-bottom: 0;
     border: none;
 
@@ -152,5 +154,11 @@
 
   @media (min-width: $desktop-width) {
     right: 0;
+  }
+}
+
+.reviews__order-button-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
   }
 }

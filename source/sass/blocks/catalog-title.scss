@@ -1,11 +1,16 @@
 .catalog-title {
-  margin: 20px 0 22px 0;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 48px 30px 74px;
+  background: #ececec;
   text-align: center;
-  background: #F1F1F1;
-  height: 177px;
 
   @media (min-width: $tablet-width) {
-    background: #F1F1F1;
+    padding: 101px 50px 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 50px 113px;
   }
 }
 
@@ -13,5 +18,15 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
-  padding-top: 18%;
+  padding-top: 10%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
