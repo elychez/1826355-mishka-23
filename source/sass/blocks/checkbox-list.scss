@@ -1,8 +1,12 @@
 .checkbox-list {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -13,12 +17,29 @@
   &:last-child {
     padding-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 50%;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 29%;
+    padding-left: 32px;
+  }
 }
+
 
 .checkbox-list__label {
   position: relative;
   font-size: 17px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    padding-left: 80px;
+  }
 
   &::before {
     content: "";
@@ -29,6 +50,13 @@
     left: -63px;
     top: -7px;
     transition: border-color 0.5s ease-out;
+
+    @media (min-width: $tablet-width) {
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: -10px;
+    }
   }
 
   &::after {
@@ -42,6 +70,13 @@
     height: 9px;
     border-left: 2px solid #444444;
     border-bottom: 2px solid #444444;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+      left: 13px;
+      top: 3px;
+    }
   }
 }
 

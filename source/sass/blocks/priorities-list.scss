@@ -14,6 +14,11 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: min-content;
+    width: 79%;
+  }
 }
 
 .priorities-list__item {

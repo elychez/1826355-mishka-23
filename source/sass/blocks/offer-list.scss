@@ -12,6 +12,10 @@
 .offer-list__item {
   margin-bottom: 26px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 33%;
 

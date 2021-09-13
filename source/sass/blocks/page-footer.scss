@@ -32,6 +32,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 50px 36px;
+  }
 }
 
 .page-footer__logo-image {
