@@ -7,6 +7,10 @@
     width: auto;
     margin-top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+  }
 }
 
 .reviews__title {
@@ -70,6 +74,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 78px 0 185px 223px;
+    background-position-x: 49px;
   }
 }
 

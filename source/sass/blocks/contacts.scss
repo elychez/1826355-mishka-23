@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 105px;
+    margin-bottom: 45px;
   }
 }
 
@@ -36,6 +36,23 @@
     top: -6%;
     left: 0;
     color: #F1F1F1;
+
+    @media (min-width: $tablet-width) {
+      width: 772px;
+      height: 17px;
+      background-size: 777px;
+      position: absolute;
+      top: -10%;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px;
+      top: -12%;
+      left: 49px;
+    }
   }
 }
 
@@ -61,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: contacts-main-content;
-    padding: 79px 0 0 111px;
+    padding: 85px 0 0 111px;
 
     &::before {
       top: 62px;
@@ -147,6 +164,9 @@
 
 .contacts__email--content {
   padding-left: 28px;
+  text-decoration: underline;
+  text-decoration-color: #62D1BA;
+  text-underline-offset: 7px;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
@@ -202,6 +222,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding: 30px 2px;
   }
 }
 

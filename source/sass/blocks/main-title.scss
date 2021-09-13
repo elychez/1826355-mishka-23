@@ -8,6 +8,10 @@
     margin-bottom: 120px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 106px;
+  }
 }
 
 .main-title__title {
@@ -28,5 +32,6 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    width: 624px;
   }
 }

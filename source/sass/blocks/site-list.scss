@@ -1,26 +1,44 @@
 .site-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
-  margin-top: 65px;
+  padding-top: 17px;
+  margin: 0;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
     padding: 0;
-    order: 1;
-    position: static;
-    flex-direction: row;
+  }
+}
+
+.site-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 26px 30px 24px 45px;
+  transition: color 0.5s ease-out;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    padding: 15px 15px 20px 15px;
+    height: 100%;
+  }
+
+  &:hover[href] {
+    color: rgba(0, 0, 0, 0.6);
+    transition: color 0.5s ease;
+  }
+
+  &:active[href] {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .site-list__item {
-  position: relative;
   box-shadow: inset 0 -1px 0 0 #e5e5e5;
 
   @media (min-width: $tablet-width) {
@@ -28,99 +46,144 @@
   }
 }
 
-.site-list__item:first-child {
-  box-shadow: inset 0 -1px 0 0 #e5e5e5, inset 0 1px 0 0 #e5e5e5;
-
-  @media (min-width: $tablet-width) {
-    box-shadow: none;
-  }
-}
-
-.site-list__item--link {
-  color: black;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  padding-left: 103px;
-  padding-top: 25px;
-  padding-bottom: 24px;
-  display: block;
+.site-list--user-nav {
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     height: 100%;
-    padding: 15px 15px 20px 15px;
-  }
-}
-
-.site-list__item--search {
-  @media (min-width: $tablet-width) {
-    font-size: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    left: -115px;
-    top: 19px;
-  }
-}
-
-.site-list--user-nav {
-  @media (min-width: $tablet-width) {
     justify-content: flex-end;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
-    flex: 0.7;
-    order: 3;
+    height: 100%;
+    justify-content: flex-end;
+    width: auto;
+    flex-grow: 1;
   }
 }
 
 .site-list--nav {
-  padding-top: 145px;
-
   @media (min-width: $tablet-width) {
-    order: 2;
-    padding-right: 20px;
-    flex: 1;
-    background-color: transparent;
-    padding-top: 0;
-
-    .site-list__item--link {
-      padding-top: 40px;
-      padding-left: 5px;
-    }
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {
-    flex: 0.7;
-    order: 1;
+    order: 0;
   }
 }
 
-.site-list__offer {
+.site-list--offer {
   display: none;
-  list-style: none;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    position: absolute;
-    top: 103%;
-    left: 2%;
+    width: 50%;
   }
 }
 
-.site-list__offer--item {
-  padding-right: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 24px;
+.site-link--nav {
+  padding-left: 77px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    font-size: 17px;
+    padding-top: 30px;
+    padding-left: 83px;
+  }
 }
 
-.site-list__offer--item a {
-  color: black;
+.site-link--main {
+  padding-left: 77px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.site-link--main,
+.site-link--offer {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.site-link__catalog {
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+  }
+}
+
+.site-link__form {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid #ececec;
+    padding-left: 33px;
+  }
+}
+
+.site-link__sale {
+  padding-left: 47px;
+}
+
+.site-link--search {
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    padding-bottom: 30px;
+  }
+}
+
+.site-list__search-icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 36.5px;
+    left: 32px;
+  }
+}
+
+
+.site-list__cart-icon {
+  position: absolute;
+  top: 32px;
+  left: 31px;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 30px;
+  }
 }

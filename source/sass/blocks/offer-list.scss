@@ -6,6 +6,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    gap: 54px;
   }
 }
 
@@ -17,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33%;
+    width: 30%;
 
     &:last-child p {
       padding-bottom: 0;

@@ -4,9 +4,27 @@
   padding: 48px 30px 74px;
   background: #ececec;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 101px 50px 87px;
+
+    &::after {
+      background-image: url("../../img/zigzag-white.svg");
+      width: 770px;
+      height: 24px;
+      content: "";
+      top: 90%;
+      left: 0;
+      background-repeat: no-repeat;
+      position: absolute;
+
+      @media (min-width: $desktop-width) {
+        width: 1250px;
+        height: 34px;
+        background-size: 1250px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
