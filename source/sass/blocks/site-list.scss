@@ -56,38 +56,10 @@
   @media (min-width: $tablet-width) {
     font-size: 0;
   }
-  &::before {
-    background-image: url("../../img/search_icon.svg");
-    background-repeat: no-repeat;
-    content: "";
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    position: absolute;
-    left: 10%;
-    top: 40%;
-
-    @media (min-width: $tablet-width) {
-      left: -115px;
-      top: 19px;
-    }
-  }
-}
-
-.site-list__item--cart::before {
-  background-image: url("../../img/cart_icon.svg");
-  background-repeat: no-repeat;
-  content: "";
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  position: absolute;
-  left: 10%;
-  top: 35%;
 
   @media (min-width: $tablet-width) {
-    left: -15%;
-    top: 29%;
+    left: -115px;
+    top: 19px;
   }
 }
 

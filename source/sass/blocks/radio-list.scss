@@ -1,14 +1,27 @@
 .radio-list__item {
-  padding-bottom: 15px;
-  padding-left: 23px;
+  padding-left: 18px;
   line-height: 18px;
-  padding-top: 13px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+    padding-top: 3px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+  }
 }
 
 .radio-list__label {
   font-size: 17px;
   font-weight: bold;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 
   &::before {
     content: "";
@@ -20,6 +33,10 @@
     left: -63px;
     top: -5px;
     transition: border-color 0.5s ease-out;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
   }
 
   &::after {
@@ -32,6 +49,10 @@
     width: 16px;
     height: 16px;
     background-color: #62d1ba;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
   }
 }
 

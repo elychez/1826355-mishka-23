@@ -1,3 +1,5 @@
-.products__link img {
-  height: 100%;
+.products {
+  @media (min-width: $tablet-width) {
+    margin-top: 67px;
+  }
 }

@@ -6,7 +6,11 @@
   @media (min-width: $tablet-width) {
     width: 292px;
     height: 100px;
-    margin-top: 85px;
+    margin-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
   }
 }
 
@@ -14,6 +18,9 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -33,6 +40,7 @@
   font-size: 17px;
   line-height: 20px;
   color: #63D1BB;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     line-height: 17px;
@@ -43,7 +51,7 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
-    padding-top: 41px;
+    padding-top: 29px;
   }
 }
 
@@ -52,11 +60,15 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  margin: 0;
+  margin-bottom: 29px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
     width: 292px;
+    margin-top: 31px;
   }
 }
 
@@ -64,9 +76,14 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 447px;
-    height: 601px;
+    width: 525px;
+    height: 636px;
   }
 }
 
@@ -91,17 +108,25 @@
   line-height: 24px;
   color: #444444;
   text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-left: 80px;
+    margin-top: 71px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 72px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 88px;
+    margin-top: 126px;
   }
 }
-.sale-hit__titles{
+
+.sale-hit__titles {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -115,11 +140,14 @@
 }
 
 .sale-hit__wrapper {
+  margin-top: 31px;
+
   @media (min-width: $tablet-width) {
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 255px;
+    margin-left: 180px;
+    margin-top: 51px;
   }
 }

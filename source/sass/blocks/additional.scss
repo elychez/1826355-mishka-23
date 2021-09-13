@@ -58,6 +58,20 @@
   padding-top: 28px;
   padding-bottom: 12px;
 
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      flex: 1;
+      content: "";
+      z-index: -1;
+      height: 1px;
+      background-color: #62D1BA;
+      margin-left: 21px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }

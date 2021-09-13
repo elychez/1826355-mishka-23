@@ -14,12 +14,12 @@
 .main-nav__toggle {
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 8px;
   z-index: 7;
   display: block;
   width: 70px;
   height: 50px;
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 
@@ -31,17 +31,17 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
+  top: 11px;
+  left: 26px;
+  width: 21px;
   height: 2px;
   background: #231F20;
-  box-shadow: 0 8px 0 0 #231F20, 0 16px 0 0 #231F20;
+  box-shadow: 0 8px 0 0 #231f20, 0 16px 0 0 #231f20;
 }
 
 .main-nav--opened .main-nav__toggle {
   top: 15px;
-  right: 0;
+  right: 3px;
   z-index: 5;
 
   &::before,
