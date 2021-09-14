@@ -2,10 +2,45 @@
   width: 320px;
   color: #444444;
   margin-top: 43px;
+  position: relative;
+
+  &::after {
+    background-image: url(../../img/grey_zigzag.svg);
+    width: 320px;
+    height: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: -6%;
+    left: 0;
+    color: #F1F1F1;
+
+    @media (min-width: $tablet-width) {
+      width: 772px;
+      height: 17px;
+      background-size: 777px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px;
+      top: 90%;
+      left: 49px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
     margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
   }
 }
 
@@ -47,7 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 44px;
+    margin-bottom: 15px;
     width: 87%;
   }
 }
@@ -69,7 +104,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 78px 0 185px 223px;
+    padding: 79px 0 185px 175px;
+    background-position-x: 0;
   }
 }
 
@@ -104,8 +140,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 69px;
-    bottom: 236px;
+    right: 19px;
+    bottom: 233px;
   }
 }
 

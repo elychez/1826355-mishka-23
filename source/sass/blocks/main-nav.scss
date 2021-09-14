@@ -1,76 +1,83 @@
 .main-nav {
-  display: flex;
+  display: block;
   position: relative;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     align-items: center;
-    justify-content: flex-start;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 15px;
-  right: 8px;
-  z-index: 7;
-  display: block;
-  width: 70px;
-  height: 50px;
-  background-color: transparent;
-  cursor: pointer;
+  top: 1%;
+  right: 27px;
+  z-index: 2;
+  display: none;
+  width: 50px;
+  height: 20px;
   border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
 
-  @media (min-width: $tablet-width) {
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
     display: none;
+  }
+
+  .main-nav__toggle {
+    display: block;
   }
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 11px;
-  left: 26px;
-  width: 21px;
+  top: 34%;
+  right: 4px;
+  width: 20px;
   height: 2px;
-  background: #231F20;
-  box-shadow: 0 8px 0 0 #231f20, 0 16px 0 0 #231f20;
+  background-color: black;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 15px;
-  right: 3px;
-  z-index: 5;
+  top: 4px;
+  right: 27px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 36px;
+    width: 24px;
     height: 2px;
-    background-color: #000000;
+    background-color: black;
   }
 
   &::before {
     transform: rotate(45deg);
-    box-shadow: none;
   }
 
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($color: #0000007c, $alpha: 0.5);
+  }
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav__list {
+.main-nav--nojs {
+  .main-nav__toggle {
     display: none;
   }
 
-  .main-nav--opened .main-nav__list {
+  .site-list__item {
     display: block;
   }
 }
@@ -87,8 +94,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 107%;
-    left: 80%;
+    margin-top: 14px;
   }
 }

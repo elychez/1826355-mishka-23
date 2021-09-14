@@ -20,6 +20,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 33px;
   }
 }
 
@@ -37,6 +38,23 @@
     top: -5%;
     left: 0;
     color: #F1F1F1;
+
+    @media (min-width: $tablet-width) {
+      width: 772px;
+      height: 17px;
+      background-size: 777px;
+      position: absolute;
+      top: -13%;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px;
+      top: -15%;
+      left: 49px;
+    }
   }
 
   @media (min-width: $tablet-width) {

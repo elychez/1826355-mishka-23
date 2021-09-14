@@ -2,6 +2,15 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    width: 80%;
+  }
 }
 
 .user-contacts__input {
@@ -15,6 +24,17 @@
   line-height: 18px;
   outline: 0;
   transition: border-color 0.5s ease-out;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f9f9f9;
+    font-size: 19px;
+    line-height: 18px;
+
+    &::placeholder {
+      padding-left: 20px;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .user-contacts__label {
@@ -45,6 +65,16 @@
     position: static;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    left: -168px;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -118px;
+    top: 4px;
+  }
 }
 
 .user-contacts__label--email {
@@ -59,6 +89,16 @@
   @media (max-width: $mobile-width-only) {
     position: static;
     align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: -168px;
+    top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -118px;
+    top: 11px;
   }
 }
 
@@ -80,4 +120,57 @@
 .user-contacts__input:focus::placeholder {
   color: #444444;
   transition: color 0.5s ease;
+}
+
+.user-contacts__icon {
+  position: absolute;
+  opacity: 0.2;
+  transition: fill 0.5s ease-out;
+}
+
+.user-contacts__icon--phone {
+  top: 8%;
+  left: 88%;
+
+  @media (min-width: $tablet-width) {
+    top: 17%;
+    left: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 95.5%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    top: 33%;
+    left: 92%;
+  }
+}
+
+
+.user-contacts__icon--mail {
+  top: 72%;
+  left: 86%;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 26%;
+    left: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 95%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    top: 52%;
+    left: 91%;
+  }
+}
+
+.user-contacts__item:hover .user-contacts__icon,
+.user-contacts__item:focus .user-contacts__icon {
+  fill: #62d1ba;
+  opacity: 1;
+  transition: fill 0.5s ease;
 }

@@ -1,16 +1,58 @@
 .information-list {
   padding-left: 0;
   margin-bottom: 9px;
+
+  @media (min-width: $desktop-width) {
+    width: 81%;
+  }
 }
 
 .information-list__item {
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-left: 12px;
+    gap: 26px;
+
+    &:nth-child(1) {
+      padding-top: 9px;
+      padding-bottom: 34px;
+
+      .information-list__input {
+        padding-bottom: 16px;
+      }
+    }
+
+    &:nth-child(2) {
+      .information-list__input {
+        padding-bottom: 18px;
+      }
+    }
+
+    &:nth-child(3) {
+      padding-top: 14px;
+
+      .information-list__input {
+        padding-bottom: 18px;
+      }
+    }
+  }
 }
 
 .information-list__label {
   font-size: 17px;
   font-weight: bold;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+  }
 }
 
 .information-list__input {
@@ -24,6 +66,11 @@
   line-height: 18px;
   outline: 0;
   transition: border-color 0.5s ease-out;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .information-list__input:hover,

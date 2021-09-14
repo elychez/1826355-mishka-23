@@ -1,3 +1,35 @@
+.categories {
+  background-color: #f9f9f9;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-image: url("../../img/zigzag-white.svg");
+      width: 770px;
+      height: 24px;
+      content: "";
+      top: 97%;
+      left: 0;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-image: url("../../img/zigzag-white.svg");
+      width: 1250px;
+      height: 34px;
+      background-size: 1250px;
+      content: "";
+      top: 96%;
+      left: 0;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+  }
+}
+
 .categories__wrapper {
   background-image: url(../../img/toys-mobile.jpg);
   background-size: 321px 373px;
@@ -19,6 +51,17 @@
     background-position: center bottom;
     min-height: 746px;
     background-repeat: no-repeat;
+  }
+}
+
+.categories__background-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
   }
 }
 
