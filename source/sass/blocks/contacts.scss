@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 73px;
   }
 }
 
@@ -22,37 +22,7 @@
       "contacts-button        contacts-map";
     grid-template-columns: 1fr auto;
     column-gap: 23px;
-    padding: 0 50px 0 113px;
-  }
-
-  &::before {
-    background-image: url(../../img/grey_zigzag.svg);
-    width: 320px;
-    height: 6px;
-    background-position: center;
-    background-repeat: no-repeat;
-    content: "";
-    position: absolute;
-    top: -6%;
-    left: 0;
-    color: #F1F1F1;
-
-    @media (min-width: $tablet-width) {
-      width: 772px;
-      height: 17px;
-      background-size: 777px;
-      position: absolute;
-      top: -10%;
-      left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1050px;
-      height: 23px;
-      background-size: 1050px;
-      top: -12%;
-      left: 49px;
-    }
+    padding: 0 50px 0 62px;
   }
 }
 
@@ -222,7 +192,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding: 30px 2px;
+    padding: 0 2px;
   }
 }
 
@@ -233,6 +203,6 @@
     width: 527px;
     position: absolute;
     top: 1%;
-    left: 48%;
+    left: 51%;
   }
 }

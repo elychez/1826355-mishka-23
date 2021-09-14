@@ -140,6 +140,11 @@
   @media (min-width: $desktop-width) {
     left: 95.5%;
   }
+
+  @media (max-width: $mobile-width-only) {
+    top: 33%;
+    left: 92%;
+  }
 }
 
 
@@ -155,6 +160,11 @@
 
   @media (min-width: $desktop-width) {
     left: 95%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    top: 52%;
+    left: 91%;
   }
 }
 
