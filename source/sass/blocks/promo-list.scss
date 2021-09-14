@@ -1,41 +1,135 @@
 .promo-list {
-  list-style: none;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .promo-list__interior-color {
   background-color: #63d1bb;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:hover .promo-list__item-icon {
+    opacity: 1;
+  }
+
+  &:active .promo-list__item-icon,
+  &:active .promo__list-link {
+    opacity: 0.3;
+  }
 }
 
 .promo-list__toys-color {
   background-color: #56c3b2;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:hover .promo-list__item-icon {
+    opacity: 1;
+  }
+
+  &:active .promo-list__item-icon,
+  &:active .promo__list-link {
+    opacity: 0.3;
+  }
 }
 
 .promo-list__item {
-  width: 100%;
+  position: relative;
+  list-style: none;
   min-height: 103px;
+  width: 100%;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:hover .promo__icon {
+    opacity: 1;
+  }
+
+  &:active .promo__icon,
+  &:active .promo-list__item--link {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    min-height: 121px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 122px;
+  }
 }
 
 .promo-list__item--link {
-  font-weight: bold;
+  display: block;
   font-size: 19px;
   line-height: 24px;
-  color: white;
-  padding-left: 30px;
-  width: 130px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 111px;
-  padding-top: 25px;
+  font-weight: bold;
+  width: 200px;
+  padding-top: 26px;
+  padding-left: 32px;
+  padding-right: 30px;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-left: 36px;
+  }
+}
+
+.promo-list__item-icon {
+  fill: #149080;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 31%;
+  left: 75%;
+
+  @media (min-width: $tablet-width) {
+    top: 21%;
+    left: 75%;
+  }
 
   @media (min-width: $desktop-width) {
-    gap: 304px;
+    left: 84%;
+  }
+}
+
+.promo-list__icon-toy {
+  @media (max-width: $mobile-width-only) {
+    top: 18%;
+    left: 73%;
+  }
+}
+
+.promo-list__icon-lamp {
+  @media (max-width: $mobile-width-only) {
+    top: 18%;
   }
 }

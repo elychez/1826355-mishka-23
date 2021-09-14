@@ -24,15 +24,15 @@
 }
 
 .social__icon {
-  fill: black;
+  fill: #000000;
 }
 
-.social__link {
+.social-icons__item--link {
   display: block;
 
   &:hover {
     .social__icon {
-      fill: #46C1AE;
+      fill: #46c1ae;
     }
   }
 

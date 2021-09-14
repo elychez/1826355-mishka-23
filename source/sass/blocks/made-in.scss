@@ -11,7 +11,7 @@
 }
 
 .made-in__htmlacademy-logo {
-  fill: #63D1BB;;
+  fill: #63d1bb;
 }
 
 .made-in__link {
@@ -19,13 +19,13 @@
   height: 35px;
 
   &:hover {
-    .copyright__htmlacademy-logo {
-      fill: #46C1AE;
+    .made-in__htmlacademy-logo {
+      fill: #46c1ae;
     }
   }
 
   &:focus {
-    .copyright__htmlacademy-logo {
+    .made-in__htmlacademy-logo {
       opacity: 0.3;
     }
   }

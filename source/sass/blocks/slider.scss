@@ -12,10 +12,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    padding-left: 52px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    padding-left: 0;
   }
 }
 
@@ -24,6 +26,14 @@
   font-size: 17px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .slider__item {

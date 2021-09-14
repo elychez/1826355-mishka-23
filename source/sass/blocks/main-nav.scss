@@ -21,7 +21,7 @@
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -41,7 +41,7 @@
   right: 4px;
   width: 20px;
   height: 2px;
-  background-color: black;
+  background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
@@ -55,7 +55,7 @@
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: black;
+    background-color: #000000;
   }
 
   &::before {

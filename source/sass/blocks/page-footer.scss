@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .page-footer__wrapper {
@@ -39,7 +39,7 @@
 }
 
 .page-footer__logo-image {
-  fill: black;
+  fill: #000000;
 }
 
 .page-footer__logo {
@@ -53,7 +53,7 @@
 
     &:hover {
       .page-footer__logo-image {
-        fill: #46C1AE;
+        fill: #46c1ae;
       }
     }
 
@@ -64,4 +64,3 @@
     }
   }
 }
-
