@@ -40,19 +40,21 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  color: #63D1BB;
+  color: #63d1bb;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     line-height: 17px;
     width: 100px;
     text-align: center;
-    padding-top: 29px;
+    padding-top: 21px;
+    padding-right: 24px;
   }
 
   @media (min-width: $desktop-width) {
     order: 1;
     padding-top: 87px;
+    padding-right: 0;
   }
 }
 

@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.slider__author--name {
+.slider__author-name {
   font-weight: bold;
   display: block;
   margin-bottom: 3px;
@@ -12,18 +12,28 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    padding-left: 52px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    padding-left: 0;
   }
 }
 
-.slider__author--nickname {
+.slider__author-nickname {
   display: block;
   font-size: 17px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .slider__item {

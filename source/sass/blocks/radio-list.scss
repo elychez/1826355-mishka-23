@@ -30,7 +30,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-radius: 50%;
     left: -63px;
     top: -5px;
@@ -66,8 +66,17 @@
   }
 }
 
+.radio-list__input + .radio-list__label::after {
+  border-color: #444444;
+}
+
+.radio-list__input:checked + .radio-list__label::before {
+  border-color: #62d1ba;
+}
+
 .radio-list__input:checked + .radio-list__label::after {
   display: block;
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .radio-list__label:hover::before {

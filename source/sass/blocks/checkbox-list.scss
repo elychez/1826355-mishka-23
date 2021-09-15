@@ -46,7 +46,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 2px solid black;
+    border: 2px solid #000000;
     left: -63px;
     top: -7px;
     transition: border-color 0.5s ease-out;
@@ -80,11 +80,15 @@
   }
 }
 
+.checkbox-list__input:checked + .checkbox-list__label::before {
+  border-color: #62d1ba;
+}
+
 .checkbox-list__input:checked + .checkbox-list__label::after {
   display: block;
 }
 
-.checkbox-list__label:active::before {
+.checkbox-list__input + .checkbox-list__label:active::before {
   border-color: rgba($color: #444444, $alpha: 0.3);
   transition: color 0.5s ease;
 }

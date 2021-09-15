@@ -8,6 +8,19 @@
   text-transform: uppercase;
   outline: 0;
   display: block;
+  transition: all 0.5s ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--offer {
@@ -33,7 +46,7 @@
     display: inline-block;
     position: absolute;
     top: 76px;
-    right: 49px;
+    right: 48px;
     width: 176px;
   }
 
@@ -59,7 +72,7 @@
   padding: 18px 68px 18px 124px;
   background-color: #63d1bb;
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -83,7 +96,7 @@
 .button--form {
   text-align: center;
   padding: 18px 37px;
-  background-color: white;
+  background-color: #ffffff;
   width: 260px;
   margin-top: 20px;
 
@@ -97,5 +110,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 10px;
     margin-left: 175px;
+    width: 236px;
   }
 }
