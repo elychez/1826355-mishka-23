@@ -13,29 +13,27 @@
 
   &::after {
     background-image: url("../../img/grey_zigzag.svg");
-    width: 320px;
     height: 6px;
+    background-size: auto 6px;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     content: "";
     position: absolute;
     top: -6%;
     left: 0;
+    right: 0;
+    bottom: 0;
     color: #f1f1f1;
 
     @media (min-width: $tablet-width) {
-      width: 772px;
       height: 17px;
-      background-size: 777px;
-      position: absolute;
+      background-size: auto 17px;
       top: 91%;
-      left: 0;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1050px;
       height: 23px;
-      background-size: 1050px;
+      background-size: auto 23px;
       top: 90%;
       left: 49px;
     }
@@ -98,8 +96,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
-    width: 87%;
+    margin-bottom: 44px;
+    width: 93%;
     padding-left: 0;
   }
 }

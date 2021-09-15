@@ -5,26 +5,22 @@
   @media (min-width: $tablet-width) {
     &::after {
       background-image: url("../../img/zigzag-white.svg");
-      width: 100vw;
+      background-size: auto 37px;
       height: 24px;
       content: "";
+      background-repeat: repeat-x;
       top: 97%;
       left: 0;
-      background-repeat: no-repeat;
+      right: 0;
+      bottom: 0;
       position: absolute;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      background-image: url("../../img/zigzag-white.svg");
-      width: 100vw;
       height: 34px;
-      background-size: 100%;
-      content: "";
       top: 96%;
-      left: 0;
-      background-repeat: no-repeat;
       position: absolute;
     }
   }
@@ -37,12 +33,20 @@
   min-height: 373px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/toys-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/toys.jpg");
-    background-size: 1124px 746px;
+    background-image: url("../../img/toys-tablet.jpg");
+    background-size: 768px 746px;
     background-position: center bottom;
     min-height: 746px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/toys-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +55,10 @@
     background-position: center bottom;
     min-height: 746px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/toys-desktop@2x.jpg");
+    }
   }
 }
 

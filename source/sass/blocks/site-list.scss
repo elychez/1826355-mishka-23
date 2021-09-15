@@ -113,13 +113,13 @@
   }
 }
 
-.site-link__catalog {
+.site-link--catalog {
   @media (min-width: $tablet-width) {
     padding-right: 36px;
   }
 }
 
-.site-link__form {
+.site-link--form {
   @media (min-width: $tablet-width) {
     padding-left: 0;
   }
@@ -130,7 +130,7 @@
   }
 }
 
-.site-link__sale {
+.site-link--sale {
   padding-left: 47px;
 }
 
