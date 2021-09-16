@@ -1,0 +1,21 @@
+.map {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 457px;
+  background-image: url("https://static-maps.yandex.ru/1.x/?ll=30.323118,59.938635&size=450,450&z=16&l=map&pt=30.323118,59.938635,vkbkm");
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 46%;
+    transform: translateY(0%);
+    left: -1%;
+    width: 525px;
+  }
+}

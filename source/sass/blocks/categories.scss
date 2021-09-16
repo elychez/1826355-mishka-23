@@ -5,23 +5,24 @@
   @media (min-width: $tablet-width) {
     &::after {
       background-image: url("../../img/zigzag-white.svg");
-      background-size: auto 37px;
-      height: 24px;
       content: "";
-      background-repeat: repeat-x;
-      top: 97%;
-      left: 0;
+      position: absolute;
+      height: 24px;
+      background-size: auto 25px;
+      background-position-x: 179px;
+      left: 6px;
       right: 0;
       bottom: 0;
-      position: absolute;
+      background-repeat: repeat-x;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      height: 34px;
-      top: 96%;
-      position: absolute;
+      height: 22px;
+      background-size: auto 40px;
+      background-position-x: 188px;
+      left: 6px;
     }
   }
 }
@@ -40,7 +41,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/toys-tablet.jpg");
     background-size: 768px 746px;
-    background-position: center bottom;
+    background-position: center top;
     min-height: 746px;
     background-repeat: no-repeat;
 
@@ -69,6 +70,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 90%;
+    width: 92%;
   }
 }

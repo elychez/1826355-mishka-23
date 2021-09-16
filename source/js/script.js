@@ -50,3 +50,27 @@ setListner(indexButton, "click", function (openOrder) {
   }
 
 })
+
+if(document.querySelector("#map")){
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [59.938635, 30.323118],
+        zoom: 16,
+        controls: ["zoomControl"]
+      }, {
+        suppressMapOpenBlock: true
+
+      }),
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Собственный значок метки',
+        balloonContent: 'Это красивая метка'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/icon-map-pin.svg',
+        iconImageSize: [67, 100],
+        iconImageOffset: [-30, -90]
+      });
+    myMap.geoObjects
+      .add(myPlacemark)
+  });
+}

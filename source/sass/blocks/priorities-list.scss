@@ -6,7 +6,6 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;
-    gap: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -22,6 +21,8 @@
 }
 
 .priorities-list__item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 90%;
   }
@@ -31,6 +32,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -66,4 +68,94 @@
   .priorities-list li:nth-of-type(6) {
     order: 6;
   }
+}
+
+.priorities-list li:nth-of-type(1) {
+  padding-bottom: 83px;
+  padding-top: 62px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-bottom: 57px;
+  }
+}
+
+.priorities-list li:nth-of-type(2) {
+  padding-bottom: 83px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.priorities-list li:nth-of-type(3) {
+  padding-bottom: 83px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+}
+
+.priorities-list li:nth-of-type(4) {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-top: 63px;
+  }
+  padding-bottom: 82px;
+}
+
+.priorities-list li:nth-of-type(5) {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+  }
+  padding-bottom: 64px;
+}
+
+.priorities-list li:nth-of-type(6) {
+  padding-top: 20px;
+}
+
+.priorities-list__item-image {
+  position: absolute;
+}
+
+.priorities-list li:nth-of-type(1) img {
+  top: 7px;
+  left: 8px;
+}
+
+.priorities-list li:nth-of-type(2) img {
+  top: -54px;
+  left: 0;
+}
+
+.priorities-list li:nth-of-type(3) img {
+  top: -49px;
+  left: 7px;
+
+  @media (min-width: $tablet-width) {
+    top: -30px;
+    left: 8px;
+  }
+}
+
+.priorities-list li:nth-of-type(4) img {
+  top: -52px;
+  left: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    left: 2px;
+  }
+}
+
+.priorities-list li:nth-of-type(5) img {
+  top: -50px;
+  left: -6px;
+}
+
+.priorities-list li:nth-of-type(6) img {
+  top: -33px;
+  left: 3px;
 }

@@ -7,8 +7,24 @@
   gap: 41px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
 }
 
-.social-icons__item {
-  margin-top: 25px;
+.social-icons__item-link {
+  display: block;
+
+  &:hover {
+    .social__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:focus {
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
 }
