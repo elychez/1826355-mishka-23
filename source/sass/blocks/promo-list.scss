@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
+    min-width: 1052px;
     margin: 0 auto;
   }
 }
@@ -72,7 +72,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    min-height: 121px;
+    min-height: 130px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,7 +88,7 @@
   width: 200px;
   padding-top: 26px;
   padding-left: 32px;
-  padding-right: 30px;
+  padding-right: 280px;
   transition: opacity 0.3s ease;
   text-decoration: none;
   color: #ffffff;
@@ -96,8 +96,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 28px;
+    padding-top: 26px;
     padding-left: 36px;
+    padding-right: 100%;
   }
 }
 
@@ -126,10 +127,30 @@
     top: 18%;
     left: 73%;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 72.5%;
+    top: 24%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 81.5%;
+    top: 27%;
+  }
 }
 
 .promo-list__icon-lamp {
   @media (max-width: $mobile-width-only) {
     top: 18%;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 77.5%;
+    top: 22%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 85.5%;
+    top: 26%;
   }
 }

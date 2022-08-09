@@ -2,7 +2,6 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 2px;
     margin-bottom: 0;
   }
 }
@@ -25,20 +24,4 @@
 
 .social__icon {
   fill: #000000;
-}
-
-.social-icons__item-link {
-  display: block;
-
-  &:hover {
-    .social__icon {
-      fill: #46c1ae;
-    }
-  }
-
-  &:focus {
-    .social__icon {
-      opacity: 0.3;
-    }
-  }
 }

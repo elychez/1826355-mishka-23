@@ -68,12 +68,12 @@
 
   @media (min-width: $tablet-width) {
     left: -168px;
-    top: 0;
+    top: 10px;
   }
 
   @media (min-width: $desktop-width) {
     left: -118px;
-    top: 4px;
+    top: 11px;
   }
 }
 
@@ -103,7 +103,7 @@
 }
 
 .user-contacts__item {
-  padding-bottom: 19px;
+  padding-bottom: 27px;
   position: relative;
 
   &:last-child {
@@ -115,6 +115,16 @@
 .user-contacts__input:focus {
   border-color: #62d1ba;
   transition: border-color 0.5s ease;
+}
+
+.user-contacts__input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .user-contacts__input:focus::placeholder {
@@ -142,8 +152,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    top: 33%;
-    left: 92%;
+    top: 37%;
+    left: 88%;
   }
 }
 
@@ -163,8 +173,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    top: 52%;
-    left: 91%;
+    top: 54%;
+    left: 87%;
   }
 }
 
@@ -173,4 +183,9 @@
   fill: #62d1ba;
   opacity: 1;
   transition: fill 0.5s ease;
+}
+
+.user-contacts__input:focus {
+  border-color: #62d1ba;
+  transition: border-color 0.5s ease;
 }

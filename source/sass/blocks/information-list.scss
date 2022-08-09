@@ -1,9 +1,15 @@
 .information-list {
   padding-left: 0;
-  margin-bottom: 9px;
+  margin-bottom: 0;
+  margin-top: -26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -32px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 81%;
+    margin-top: 27px;
   }
 }
 
@@ -16,25 +22,28 @@
     gap: 26px;
 
     &:nth-child(1) {
-      padding-top: 9px;
+      padding-top: 2px;
       padding-bottom: 34px;
 
       .information-list__input {
-        padding-bottom: 16px;
+        padding-bottom: 9px;
+        padding-left: 19px;
       }
     }
 
     &:nth-child(2) {
       .information-list__input {
-        padding-bottom: 18px;
+        padding-bottom: 9px;
+        padding-left: 19px;
       }
     }
 
     &:nth-child(3) {
-      padding-top: 14px;
+      padding-top: 10px;
 
       .information-list__input {
-        padding-bottom: 18px;
+        padding-bottom: 9px;
+        padding-left: 19px;
       }
     }
   }
@@ -43,7 +52,8 @@
 .information-list__label {
   font-size: 17px;
   font-weight: bold;
-  padding-right: 20px;
+  padding-right: 3px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -51,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 30px;
+    padding-right: 0;
   }
 }
 
@@ -70,6 +80,16 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
+  }
+}
+
+.information-list__input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
   }
 }
 

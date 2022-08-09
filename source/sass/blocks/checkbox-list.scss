@@ -97,3 +97,20 @@
   border-color: #62d1ba;
   transition: border-color 0.5s ease;
 }
+
+.checkbox-list__label:focus::before {
+  border-color: #62d1ba;
+  transition: border-color 0.5s ease;
+}
+
+.checkbox-list :focus + label::before {
+  border-color: #ececec;
+}
+
+.checkbox-list .checkbox-list__input:checked:focus + label::before {
+  border-color: #ececec;
+}
+
+.checkbox-list__input:disabled + label::before {
+  opacity: 0.2;
+}

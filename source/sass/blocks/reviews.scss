@@ -1,7 +1,7 @@
 .reviews {
   width: 320px;
   color: #444444;
-  margin-top: 43px;
+  margin-top: 57px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
@@ -19,7 +19,7 @@
     background-repeat: repeat-x;
     content: "";
     position: absolute;
-    top: -6%;
+    top: 108%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -27,21 +27,23 @@
 
     @media (min-width: $tablet-width) {
       height: 17px;
-      background-size: auto 17px;
-      top: 91%;
+      background-size: auto 14px;
+      top: 91.5%;
+      left: 3px;
     }
 
     @media (min-width: $desktop-width) {
       height: 23px;
-      background-size: auto 23px;
-      top: 90%;
-      left: 49px;
+      background-size: 1116px 20px;
+      background-position: center;
+      top: 91%;
+      left: -5px;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-top: 22px;
+    margin-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +89,7 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  width: 97%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 61px;

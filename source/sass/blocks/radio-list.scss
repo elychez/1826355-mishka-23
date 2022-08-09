@@ -1,7 +1,8 @@
 .radio-list__item {
-  padding-left: 18px;
+  padding-left: 22px;
   line-height: 18px;
-  padding-top: 20px;
+  padding-top: 21px;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 54px;
@@ -11,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 36px;
-    padding-bottom: 42px;
+    padding-bottom: 50px;
     padding-top: 10px;
   }
 }
@@ -87,4 +88,16 @@
 .radio-list__label:active::before {
   border-color: rgba($color: #444444, $alpha: 0.3);
   transition: color 0.5s ease;
+}
+
+.radio-list :focus + label::before {
+  border-color: #ececec;
+}
+
+.radio-list .radio-list__input:checked:focus + label::before {
+  border-color: #ececec;
+}
+
+.radio-list__input:disabled + label::before {
+  opacity: 0.2;
 }

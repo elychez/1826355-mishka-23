@@ -1,7 +1,12 @@
 .sale-body__row-data {
-  border-bottom: 1px solid #808080;
+  background: linear-gradient(#ececec, #ececec) 0 calc(100% - 5px)/100% 2px no-repeat;
   color: #444444;
   font-size: 15px;
   line-height: 20px;
+  padding-right: 26px;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
 }
