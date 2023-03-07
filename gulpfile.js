@@ -198,8 +198,4 @@ exports.default = gulp.series(
     sprite,
     createWebp
   ),
-  gulp.series(
-    server,
-    watcher
-  )
 );
